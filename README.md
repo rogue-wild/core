@@ -1,0 +1,2 @@
+# core
+CS Core Subjects
