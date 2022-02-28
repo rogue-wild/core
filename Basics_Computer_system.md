@@ -1,4 +1,6 @@
 # **Basics of Computer System**
+<hr>
+
 **Digital Computers**
 >The word digital implies that the information in the computer is represented by variables that take a limited number of discrete values. In practice, digital computers work reliably if only two states are used, because of physical restrictions and human logic tends to be bianry(Yes or No, True or False).
 >A binary digit is called a bit. 
@@ -6,7 +8,7 @@
 **Program**
 >A sequence of instructions for the computer is called a Program.
 
-<img src="https://user-images.githubusercontent.com/42809447/155906712-cc5d455c-61bb-40ac-b9fd-3a781bdad433.png" height="500">
+<img src="https://user-images.githubusercontent.com/42809447/155906712-cc5d455c-61bb-40ac-b9fd-3a781bdad433.png" height="400">
 
 `Block Diagram of a Digital Computer`
 
@@ -61,9 +63,10 @@
 >A group of eight bits is called a byte.
 
 > - _`The internal structure of a memory unit is specified by the number of words it contains and the number of bits in each word. Special input lines called address lines select one particular word. Each word in memory is assigned an identification number, called an address, starting from 0 and continuing with 1, 2, 3, up to 2^k - 1 where k is the number of address lines. The selection of a specific word inside the memory is done by applying the k-bit binary address to the address lines. A decoder inside the memory accepts this address and opens the paths needed to select the bits of the specified word`_
+
 > Two major types of memories are used in computer systems: random access memory (RAM) and read-only memory (ROM). 
 
-**Random Access Memory (RAM)** *In random-access memory (RAM) the memory cells can be accessed for information transfer from any desired random location. That is, the process of locating a word in memory is the same and requires an equal amount of time no matter where the cells are located physically in memory: thus the name "random access."It is used to store the programs and data being used by the CPU in real-time. The data on the random access memory can be read, written, and erased any number of times. RAM is a hardware element where the data being currently used is stored. It is a volatile memory. Types of RAM:*
+**Random Access Memory (RAM):** *In random-access memory (RAM) the memory cells can be accessed for information transfer from any desired random location. That is, the process of locating a word in memory is the same and requires an equal amount of time no matter where the cells are located physically in memory: thus the name "random access."It is used to store the programs and data being used by the CPU in real-time. The data on the random access memory can be read, written, and erased any number of times. RAM is a hardware element where the data being currently used is stored. It is a volatile memory. Types of RAM:*
 - Static RAM, or (SRAM) which stores a bit of data using the state of a six transistor memory cell.
 - Dynamic RAM, or (DRAM) which stores a bit data using a pair of transistor and capacitor which constitute a DRAM memory cell.
 
@@ -80,7 +83,7 @@ lines.
 >2. Activate the read input. 
 >The memory unit will then take the bits from the word that has been selected by the address and apply them into the output data lines. The content of the selected word does not change after reading. 
 
-**Read Only Memory (ROM)** *is a type of memory where the data has been prerecorded. Data stored in ROM is retained even after the computer is turned off ie, non-volatile. Types of ROM:*
+**Read Only Memory (ROM):** *is a type of memory where the data has been prerecorded. Data stored in ROM is retained even after the computer is turned off ie, non-volatile. Types of ROM:*
 
 - Programmable ROM, where the data is written after the memory chip has been created. It is non-volatile.
 - Erasable Programmable ROM, where the data on this non-volatile memory chip can be erased by exposing it to high-intensity UV light.
@@ -126,3 +129,8 @@ lines.
 
 **Bus and Memory Transfers**
 >A typical digital computer has many registers, and paths must be provided to transfer information from one register to another. The number of wires will be excessive if separate lines are used between each register and all other registers in the system. A more efficient scheme for transferring information between registers in a multiple register configuration is a common bus system. A bus structure consists of a set of common lines, one for each bit of a register, through which binary information is transferred one at a time. Control signals determine which register is selected by the bus during each particular register transfer. 
+
+#
+
+**Instruction Codes**
+
