@@ -68,6 +68,7 @@
 - Dynamic RAM, or (DRAM) which stores a bit data using a pair of transistor and capacitor which constitute a DRAM memory cell.
 
 >Communication between a memory and its environment is achieved through data input and output lines, address selection lines, and control lines that specify the direction of transfer.The n data input lines provide the information to be stored in memory, and the n data output lines supply the information coming out of memory. The k address lines provide a binary number of k bits that specify a particular word chosen among the 2' available inside the memory. The two control inputs specify the direction of transfer desired.The two operations that a random-access memory can perform are the write and read operations. The write signal specifies a transfer-in operation and the read signal specifies a transfer-out operation. On accepting one of these control signals, the internal circuits inside the memory provide the desired function. The steps that must be taken for the purpose of transferring a new word to be stored into memory are as follows: 
+
 >![image](https://user-images.githubusercontent.com/42809447/155907828-c8ba47ba-b125-4a8b-8249-e7e5af1bc9b4.png)
 
 >1. Apply the binary address of the desired word into the address lines.
@@ -87,8 +88,33 @@ lines.
 - Mask ROM, in which the data is written during the manufacturing of the memory chip.
 
 >A read-only memory (ROM) is a memory unit that performs the read operation only; it does not have a write capability. This implies that the binary information stored in a ROM is made permanent during the hardware production of the unit and cannot be altered by writing different words into it. Whereas a RAM is a general-purpose device whose contents can be altered during the computational process, a ROM is restricted to reading words that are permanently stored within the unit. The binary information to be stored, specified by the designer, is then embedded in the unit to form the reqttired interconnection pattern. ROMs come with special internal electronic fuses that can be "programmed" for a specific configuration. Once the pattern is established, it stays within the unit even when power is turned off and on again. 
+
+>![image](https://user-images.githubusercontent.com/42809447/155907853-84c297c4-c703-46cb-ab3c-d8e262a32915.png)
+
 >An m x n ROM is an array of binary cells organized into m words of n bits each. A ROM has k address input llnes to select one of 2^k = m words of memory, and n output lines, one for each bit of the word. An integrated circuit ROM may also have one or more enable inputs for expanding a number of packages into a ROM with larger capacity.
 >The ROM does not need a read-control llne since at any given time, the output lines automatically provide the n bits of the word selected by the address value. Because the outputs are a function of only the present inputs (the address lines), a ROM is classified as a combinational circuit. In fact, a ROM is constructed internally with decoders and a set of OR gates. There is no need for providing storage capabilities as in a RAM, since the values of the bits in the ROM are permanently fixed. 
->ROMs find a wide range of applications in the design of digital systems. Basically, a ROM generates an input--<>utput relation specified by a truth table. As such, it can implement any combinational circuit with k inputs and n outputs. When employed in a computer system as a memory unit, the ROM is used for storing fixed programs that are not to be altered and for tables of constants that are not subject to change. ROM is also employed in the design of control units for digital computers. As such, they are used to store coded information that represents the sequence of internal control variables needed for enabling the various operations in the computer. A control unit that utilizes a ROM to store binary control information is called a microprogrammed control unit. 
->![image](https://user-images.githubusercontent.com/42809447/155907853-84c297c4-c703-46cb-ab3c-d8e262a32915.png)
+>ROMs find a wide range of applications in the design of digital systems. Basically, a ROM generates an input-output relation specified by a truth table. As such, it can implement any combinational circuit with k inputs and n outputs. When employed in a computer system as a memory unit, the ROM is used for storing fixed programs that are not to be altered and for tables of constants that are not subject to change. ROM is also employed in the design of control units for digital computers. As such, they are used to store coded information that represents the sequence of internal control variables needed for enabling the various operations in the computer. A control unit that utilizes a ROM to store binary control information is called a microprogrammed control unit. 
+
+#
+**Error Detection Codes**
+>Binary information transmitted through some form of communication medium is subject to external noise that could change bits from 1 to 0, and vice versa. An error detection code is a binary code that detects digital errors during transmission. The detected errors cannot be corrected but their presence is indicated. The usual procedure is to observe the frequency of errors. If errors occur infrequently at random, the particular erroneous information is transmitted again. If the error occurs too often, the system is checked for malfunction. 
+> - The most common error detection code used is the parity bit. A parity bit is an extra bit included with a binary message to make the total number of 1's either odd or even. A message of three bits and two possible parity bits is shown in Table 3-7. The P(odd) bit is chosen in such a way as to make the sum of 1's (in all four bits) odd. The P(even) bit is chosen to make the sum of all 1's even. In either case, the sum is taken over the message and the P bit. In any particular application, one or the other type of parity will be adopted. The even-parity scheme has the disadvantage of having a bit combination of all O's, while in the odd parity there is always one bit (of the four bits that constitute the message and P) that is 1. Note that the P(odd) is the complement of the P(even). 
+>
+| Message *xyz* | P(odd)  | P(even)|
+| :---          |:----:   |   ---: |
+| 000           | 1       | 0      |
+| 001           | 0       | 1      |
+| 010           | 0       | 1      |
+| 011           | 1       | 0      |
+| 100           | 0       | 1      |
+| 101           | 1       | 0      |
+| 110           | 1       | 0      |
+| 111           | 0       | 1      |
+
+
+> - During transfer of information from one location to another, the parity bit is handled as follows. At the sending end, the message (in this case three bits) is applied to a parity generator, where the required parity bit is generated. 
+
+> - The message, including the parity bit, is transmitted to its destination. At the receiving end, all the incoming bits (in this case, four) are applied to a parity checker that checks the proper parity adopted (odd or even). An error is detected if the checked parity does not conform to the adopted parity. The parity method detects the presence of one, three, or any odd number of errors. An even number of errors is not detected. 
+
+
 
