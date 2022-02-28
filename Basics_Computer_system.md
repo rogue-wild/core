@@ -22,22 +22,14 @@
 
 >Two basic types architecture are : 
 >1. von Neumann Architecutre: _Von Neumann Architecture is a digital computer architecture whose design is based on the concept of stored program computers where program data and instruction data are stored in the same memory. This principle holds that data, as well as the instructions used to manipulate that data, should be stored in the same memory area of the computer and instructions are carried out sequentially, one instruction at a time. This imposes a sort of "speed limit" on program execution, since only on instruction at a time can be handled by the computer's processor. It means that the CPU can be either reading an instruction or reading/writing data from/to the memory. Both cannot occur at the same time since the instructions and data use the same signal pathways and memory. Eg.: PC(Personal Computers)_
->![image](https://user-images.githubusercontent.com/42809447/155906259-862ea1ed-22fa-4d41-ac10-64eba579d878.png)
+
+![image](https://user-images.githubusercontent.com/42809447/155906259-862ea1ed-22fa-4d41-ac10-64eba579d878.png&line_height="100")
 
 
 >2. Harvard Architecutre: _Harvard Architecture is the computer architecture that contains separate storage and separate buses (signal path) for instruction and data. It was basically developed to overcome the bottleneck of Von Neumann Architecture. The main advantage of having separate buses for instruction and data is that the CPU can access instructions and read/write data at the same time. Eg.: Microcontrollers & DSP(Digital Signal Processors)_
-![image](https://user-images.githubusercontent.com/42809447/155906271-55c3bfb2-1262-42b2-862b-da7020d48ac9.png)
 
-Difference between Von Neumann and Harvard Architecture : 
+![image](https://user-images.githubusercontent.com/42809447/155906271-55c3bfb2-1262-42b2-862b-da7020d48ac9.png&line_height="100")
 
-VON NEUMANN ARCHITECTURE	HARVARD ARCHITECTURE
-It is ancient computer architecture based on stored program computer concept.	It is modern computer architecture based on Harvard Mark I relay based model.
-Same physical memory address is used for instructions and data.	Separate physical memory address is used for instructions and data.
-There is common bus for data and instruction transfer.	Separate buses are used for transferring data and instruction.
-Two clock cycles are required to execute single instruction.	An instruction is executed in a single cycle.
-It is cheaper in cost.	It is costly than Von Neumann Architecture.
-CPU can not access instructions and read/write at the same time.	CPU can access instructions and read/write at the same time.
-It is used in personal computers and small computers.	It is used in micro controllers and signal processing.
 
 #
 
