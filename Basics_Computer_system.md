@@ -1,11 +1,11 @@
 # **Basics of Computer System**
 <hr>
 
-**Digital Computers**
+## **Digital Computers**
 >The word digital implies that the information in the computer is represented by variables that take a limited number of discrete values. In practice, digital computers work reliably if only two states are used, because of physical restrictions and human logic tends to be bianry(Yes or No, True or False).
 >A binary digit is called a bit. 
 
-**Program**
+## **Program**
 >A sequence of instructions for the computer is called a Program.
 
 <img src="https://user-images.githubusercontent.com/42809447/155906712-cc5d455c-61bb-40ac-b9fd-3a781bdad433.png" height="400">
@@ -14,13 +14,13 @@
 
 #
 
-**Computer Organization**
+## **Computer Organization**
 >It is concerned with the way the hardware components operate and the way they are connected together to form the computer system.
 
-**Computer Design**
+## **Computer Design**
 >It is concerned with the hardware design of the computer.
 
-**Computer Architecture**
+## **Computer Architecture**
 >It is concerned with the structure and behaviour of the computer as seen by the user. It includes the information, the instruction set, and techniques for adressing memory. The architectural design of a computer system is concerned with the specifications of various functional modules, such as processors and memmories, and structuring them together in a computer system.
 
 >Two basic types architecture are : 
@@ -51,14 +51,14 @@
 
 #
 
-**Registers**
+## **Registers**
 > - A register is a group of flip-flops with each flip-flop capable of storing one bit of information. An n-bit register has a group of n flip-flops and is capable of storing any binary information of n bits. In addition to the flip-flops, a register may have combinational gates that perform certain data-processing tasks. In its broadest definition, a register consists of a group of flip-flops and gates that effect their transition. The flip-flops hold the binary information and the gates control when and how new information is transferred into the register.
 
 > - **Shift register**: A register capable of shifting its binary information in one or both directions is called a shift register. The logical configuration of a shift register consists of a chain of flip-flops in cascade, with the output of one flip-flop connected to the input of the next flip-flop. All flip-flops receive common clock pulses that initiate the shift from one stage to the next.
 > - **Binary Counters**: A register that goes through a predetermined sequence of states upon the application of input pulses is called a counter. The input pulses may be clock pulses or may originate from an external source. They may occur at uniform intervals of time or at random. Counters are found in almost all equipment containing digital logic. They are used for counting the number of occurrences of an event and are useful for generating timing signals to control the sequence of operations in digital computers.
 
 
-**Memory Unit**
+## **Memory Unit**
 > - A memory unit is a collection of storage cells together with associated circuits needed to transfer information in and out of storage. The memory stores binary information in groups of bits called words. A word in memory is an entity of bits that move in and out of storage as a unit. A memory word is a group of l's and O's and may represent a number, an instruction code, one or more alphanumeric characters, or any other binary-coded information. 
 >A group of eight bits is called a byte.
 
@@ -132,5 +132,5 @@ lines.
 
 #
 
-**Instruction Codes**
+## **Instruction Codes**
 
