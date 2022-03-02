@@ -1,3 +1,0 @@
-# Databases Systems
-<hr>
-
