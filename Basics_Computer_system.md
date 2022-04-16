@@ -171,10 +171,10 @@ implemented with gates, flip-flops, decoders, and other digital circuits. It has
 >Upon the completion of step 4, the control goes back to step 1 to fetch, decode, and execute the next instruction. This process continues indefinitely unless a HALT instruction is encountered.
 
 **Fetch and Decode**
->Initially, the program counter PC is loaded with the address of the first instruction in the program. The sequence counter SC is cleared to 0, providing a decoded timing signal T0. After each clock pulse, SC is incremented by one, so that the timing signals go through a sequence T0, T1, T2, and so on. The rnicrooperations for the fetch and decode phases can be specified by the following register transfer statements. 
+>Initially, the program counter PC is loaded with the address of the first instruction in the program. The sequence counter SC is cleared to 0, providing a decoded timing signal T0. After each clock pulse, SC is incremented by one, so that the timing signals go through a sequence T0, T1, T2, and so on. The microoperations for the fetch and decode phases can be specified by the following register transfer statements. 
 
 **Memory-Reference Instructions**
->In order to specify the rnicrooperations needed for the execution of each 
+>In order to specify the microoperations needed for the execution of each 
 instruction, it is necessary that the function that they are intended to perform 
 be defined precisely. 
 
